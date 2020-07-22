@@ -96,7 +96,7 @@ class User extends Component {
 					</div>
 					<div className='card text-center'>
 						<div className='badge badge-primary'>Seguidores: {followers}</div>
-						<div className='badge badge-success'>Seguindo: {following}</div>
+						<div className='badge badge-primary'>Seguidores: {following}</div>
 						<div className='badge badge-light'>
 							Repostirórios: {public_repos}
 						</div>
