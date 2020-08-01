@@ -10,9 +10,16 @@ import {
 	GET_USER,
 } from './githubTypes';
 
-let githubClientId = 'bde2c19614430db5f897';
-let githubClientSecret = 'de2503bbfac20c2086dbb7a0c314034929c4caa0';
+let githubClientId;
+let githubClientSecret;
 
+if (process.env.NODE_ENV !== 'production') {
+	githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+	githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
+} else {
+	githubClientId = process.env.GITHUB_CLIENT_ID;
+	githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
+}
 const GithubState = (props) => {
 	const initialState = {
 		users: [],
