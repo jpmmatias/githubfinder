@@ -7,13 +7,13 @@ ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 
 const Bar2D = ({data}) => {
 	const chartConfigs = {
-		type: 'bar2d', // The chart type
-		width: '100%', // Width of the chart
-		height: '400', // Height of the chart
-		dataFormat: 'json', // Data type
+		type: 'bar2d',
+		width: '100%',
+		height: '400',
+		dataFormat: 'json',
 		dataSource: {
 			chart: {
-				caption: 'Most Forked',
+				caption: 'Com mais forks',
 				yAxisName: 'Forks',
 				xAxisName: 'Repos',
 				xAxisNameFontSize: '16px',
@@ -22,7 +22,6 @@ const Bar2D = ({data}) => {
 				decimals: 0,
 				pieRadius: '45%',
 			},
-			// Chart Data
 			data,
 		},
 	};

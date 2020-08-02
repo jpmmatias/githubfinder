@@ -13,7 +13,7 @@ const Column2D = ({data}) => {
 		dataFormat: 'json',
 		dataSource: {
 			chart: {
-				caption: 'Most Popular Repos',
+				caption: 'Repos mais pupulares',
 				yAxisName: 'Stars',
 				xAxisName: 'Repos',
 				xAxisNameFontSize: '16px',

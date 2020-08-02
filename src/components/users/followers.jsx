@@ -38,7 +38,7 @@ const Wrapper = styled.article`
 	}
 
 	&::before {
-		content: ' followers';
+		content: ' seguidores';
 		position: absolute;
 		top: 0;
 		left: 0;

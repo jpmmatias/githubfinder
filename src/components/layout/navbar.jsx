@@ -24,7 +24,7 @@ const Navbar = ({icon, title}) => {
 					</li>
 					<li>
 						<button>
-							<Link to='/about'>About</Link>
+							<Link to='/about'>Sobre</Link>
 						</button>
 					</li>
 				</ul>

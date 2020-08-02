@@ -20,7 +20,7 @@ const Card = ({user}) => {
 					<h4>{name}</h4>
 					<p>{`@${twitter_username}` || ' '}</p>
 				</div>
-				<a href={html_url}>follow</a>
+				<a href={html_url}>seguir</a>
 				<p className='bio'>{bio}</p>
 				<div className='links'>
 					<p>
@@ -54,7 +54,7 @@ const Wrapper = styled.article`
 		overflow-x: hidden;
 	}
 	&::before {
-		content: 'user';
+		content: 'usuário';
 		position: absolute;
 		top: 0;
 		left: 0;

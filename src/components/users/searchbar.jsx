@@ -6,7 +6,7 @@ import AlertContext from '../../context/alert/alertContext';
 
 const Seacrh = () => {
 	const githubContext = useContext(GithubContext);
-	const {searchUsers, clearUsers, users} = githubContext;
+	const {searchUsers} = githubContext;
 
 	const alertContext = useContext(AlertContext);
 	const {setAlert} = alertContext;
@@ -49,11 +49,6 @@ const Seacrh = () => {
 						</button>
 					</div>
 				</form>
-				{/* {users.length > 0 && (
-					<button onClick={clearUsers} className='btn btn-light btn-block'>
-						Limpar
-					</button>
-				)} */}
 			</Wrapper>
 		</div>
 	);

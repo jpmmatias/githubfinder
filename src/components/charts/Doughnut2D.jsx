@@ -18,7 +18,7 @@ const Doughnut2D = ({data}) => {
 		dataSource: {
 			// Chart Configuration
 			chart: {
-				caption: 'Stars per Language',
+				caption: 'Estrelas por linguagem',
 				theme: 'fusion',
 				decimals: 0,
 				doughnutRadius: '45%',

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Seacrh from '../users/searchbar';
 import Users from '../users/users';
 import styled from 'styled-components';

@@ -20,7 +20,7 @@ const Pie2D = ({data}) => {
 		dataFormat: 'json',
 		dataSource: {
 			chart: {
-				caption: 'Languages',
+				caption: 'Linguagens',
 				theme: 'fusion',
 				decimals: 0,
 				pieRadius: '45%',
