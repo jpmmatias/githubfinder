@@ -8,6 +8,7 @@ import {
 	CLEAR_USERS,
 	GET_REPOS,
 	GET_USER,
+	SEARCH_USER_FOLLOWERS,
 } from './githubTypes';
 
 let githubClientId;
@@ -25,6 +26,7 @@ const GithubState = (props) => {
 		users: [],
 		user: {},
 		repos: [],
+		followers: [],
 		loading: false,
 	};
 
@@ -39,6 +41,18 @@ const GithubState = (props) => {
 		dispatch({
 			type: SEARCH_USERS,
 			payload: users,
+		});
+	};
+
+	const searchUserFollowers = async (username) => {
+		setLoading();
+		const res = await await axios(
+			`https://api.github.com/users/${username}/followers`
+		);
+		const followers = await res.data;
+		dispatch({
+			type: SEARCH_USER_FOLLOWERS,
+			payload: followers,
 		});
 	};
 
@@ -81,10 +95,12 @@ const GithubState = (props) => {
 				user: state.user,
 				repos: state.repos,
 				loading: state.loading,
+				followers: state.followers,
 				searchUsers,
 				clearUsers,
 				getUser,
 				getUserRepos,
+				searchUserFollowers,
 			}}
 		>
 			{props.children}

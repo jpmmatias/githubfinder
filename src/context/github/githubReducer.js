@@ -4,6 +4,7 @@ import {
 	CLEAR_USERS,
 	GET_REPOS,
 	GET_USER,
+	SEARCH_USER_FOLLOWERS,
 } from './githubTypes';
 
 export default (state, action) => {
@@ -37,6 +38,12 @@ export default (state, action) => {
 			return {
 				...state,
 				repos: action.payload,
+				loading: false,
+			};
+		case SEARCH_USER_FOLLOWERS:
+			return {
+				...state,
+				followers: action.payload,
 				loading: false,
 			};
 		default:
