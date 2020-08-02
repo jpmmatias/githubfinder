@@ -50,7 +50,8 @@ const Wrapper = styled.article`
 	width: 50%;
 
 	@media (max-width: 700px) {
-		width: 100%;
+		width: 70%;
+		overflow-x: hidden;
 	}
 	&::before {
 		content: 'user';

@@ -32,8 +32,9 @@ const Wrapper = styled.article`
 	margin-left: 2%;
 
 	@media (max-width: 700px) {
-		width: 100%;
+		width: 70%;
 		margin-left: 0;
+		overflow-x: hidden;
 	}
 
 	&::before {

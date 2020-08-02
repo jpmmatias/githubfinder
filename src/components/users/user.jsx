@@ -51,6 +51,11 @@ const Wrapper = styled.div`
 	@media (min-width: 992px) {
 		grid-template-columns: 1fr 1fr;
 	}
+	@media screen and (max-width: 700px) {
+		display: flex;
+		flex-direction: column;
+		overflow-x: hidden;
+	}
 	/* align-items: start; */
 `;
 
